@@ -1,7 +1,6 @@
 runtime: php55
 api_version: 1
 threadsafe: true
-env: flex
 
 handlers:
 - url: /
@@ -11,6 +10,3 @@ handlers:
 - url: /(.*)
   static_files: www/\1
   upload: www/(.*)
-  
- runtime.config:
-   document_root:web
